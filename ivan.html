@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Iván</title>
+    <style>
+        :root { 
+            --neon: #00f2ff; 
+            --bg: #0a0a0a; 
+        }
+
+        body { 
+            margin: 0; 
+            background: var(--bg); 
+            color: white; 
+            font-family: 'Arial Black', sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            overflow: hidden;
+        }
+
+        .container { 
+            text-align: center; 
+            padding: 50px; 
+            border: 4px solid var(--neon); 
+            border-radius: 30px; 
+            box-shadow: 0 0 25px var(--neon), inset 0 0 10px var(--neon); 
+            background: rgba(0,0,0,0.9); 
+            max-width: 400px; 
+            animation: pulso 2s infinite alternate; 
+        }
+
+        @keyframes pulso { 
+            from { transform: scale(1); box-shadow: 0 0 20px var(--neon); } 
+            to { transform: scale(1.03); box-shadow: 0 0 40px var(--neon); } 
+        }
+
+        h1 { font-size: 3rem; text-transform: uppercase; margin: 0; }
+        .highlight { color: var(--neon); text-shadow: 0 0 15px var(--neon); }
+        
+        .stats { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            margin: 30px 0; 
+            gap: 15px; 
+        }
+
+        .stat-card { 
+            background: #111; 
+            padding: 15px; 
+            border-radius: 12px; 
+            border-bottom: 3px solid var(--neon); 
+            font-size: 0.9rem;
+        }
+
+        p { font-family: 'Segoe UI', sans-serif; opacity: 0.8; line-height: 1.5; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>FELIZ <span class="highlight">CUMPLE</span>!</h1>
+        <p>El mejor amigo, el mas cariñoso.</p>
+
+        <div class="stats">
+            <div class="stat-card">🔥 Un genio: Yes</div>
+            <div class="stat-card">⭐ Lealtad: Total</div>
+            <div class="stat-card">🤝 Hermano: Real</div>
+            <div class="stat-card">🏆 El mejor: Sí</div>
+        </div>
+
+        <p>"Te quiero un monton(COMO AMIGO NO MALPIENSES jajaja)"</p>
+    </div>
+
+</body>
+</html>
